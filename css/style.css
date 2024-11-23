@@ -1,0 +1,113 @@
+header {
+    background-color:#e6e6e6; 
+    color: #0163e4;
+    text-align: center;
+    font-size: 60px;
+    font-weight:bold;
+    padding: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+   }
+   nav {
+    background-color: #0163e4;
+   }
+   nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+  }
+  nav ul li {
+    padding: 10px 0;
+  }
+  nav ul li a {
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .destaque {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    padding: 10px 0;
+    margin-top:20px;
+  }
+  .destaque .imagem {
+    background-color: #e6e6e6;
+    
+  }
+  .destaque .texto {
+    background-color: #e6e6e6;
+    }
+
+    .img1{
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+    }
+.titPrincipal{
+margin-left: 30px;
+margin-top: 8px;
+margin-bottom: 5px;
+font-size: 30px;
+font-weight: bold;
+}
+.txtPrincipal{
+margin-left: 30px;
+margin-top: 5px;
+margin-bottom: 8px;
+font-size: 25px;
+}
+.outrotxt{
+margin-left: 30px;
+margin-top: 5px;
+font-size: 25px;
+}
+.colunas-tres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px 0;
+}
+.trimestre1,
+.trimestre2
+.trimestre3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+h3{
+    font-weight:bold;
+}
+.coluna {
+    background-color: #e6e6e6;
+    padding: 10px 0;
+    text-align: center;
+  }
+.coluna img {
+   max-width: 100%;
+}
+.coluna h3 {
+    margin-top: 10px;
+}
+@media (max-width: 768px){
+    .trimestre1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px){
+    .colunas-tres {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .destaque .texto {
+        text-align:center;
+        max-width:85%;
+    }
+    .txtDestinos{
+        font-size:1rem;
+        width:86%;
+    }
+
+}
